@@ -358,7 +358,7 @@
   <p>Vision-Language Models (VLMs) are increasingly proposed for autonomous driving tasks, yet their performance on sequential driving scenes remains poorly characterized, particularly regarding how input configurations affect their capabilities.</p>
   <p>We introduce <strong>VENUSS</strong>, a framework for systematic sensitivity analysis of VLM performance on sequential driving scenes, establishing baselines for future research. Building upon existing datasets, VENUSS extracts temporal sequences from driving videos and generates structured evaluations across custom categories.</p>
   <p>By comparing 25+ existing VLMs across 2,600+ scenarios, we reveal how even top models achieve only <strong>57% accuracy</strong>, not matching human performance in similar constraints (65%) and exposing significant capability gaps. Our analysis shows that VLMs excel with static object detection but struggle with understanding the vehicle dynamics and temporal relations.</p>
-  <p>VENUSS offers the first systematic sensitivity analysis of VLMs focused on how input image configurations &mdash; resolution, frame count, temporal intervals, spatial layouts, and presentation modes &mdash; affect performance on sequential driving scenes.</p>
+  <p>VENUSS offers the first systematic sensitivity analysis of VLMs focused on how input image configurations &ndash; resolution, frame count, temporal intervals, spatial layouts, and presentation modes &ndash; affect performance on sequential driving scenes.</p>
 </section>
 
 <!-- ============================================================ -->
@@ -394,10 +394,10 @@
   <h3>Dataset-Agnostic Design</h3>
   <p>VENUSS is designed to be dataset-agnostic. Categories are automatically extracted from each dataset's textual descriptions. We release VENUSS with configurations for four datasets:</p>
   <ul>
-    <li><strong>CoVLA</strong>: 7 <em>behavioral</em> categories (motion, direction, speed, following, acceleration, traffic lights, curvature) &mdash; extracted from natural language captions.</li>
-    <li><strong>Honda Scenes</strong>: 16 <em>environmental</em> categories (road type, weather, surface, ambient lighting, infrastructure) &mdash; derived from categorical CSV annotations.</li>
-    <li><strong>Waymo Open Dataset</strong>: Multi-sensor driving data with LiDAR and camera annotations &mdash; <em>coming soon</em>.</li>
-    <li><strong>NuScenes</strong>: Multi-sensor urban driving data with 3D object annotations &mdash; <em>coming soon</em>.</li>
+    <li><strong>CoVLA</strong>: 7 <em>behavioral</em> categories (motion, direction, speed, following, acceleration, traffic lights, curvature) &ndash; extracted from natural language captions.</li>
+    <li><strong>Honda Scenes</strong>: 16 <em>environmental</em> categories (road type, weather, surface, ambient lighting, infrastructure) &ndash; derived from categorical CSV annotations.</li>
+    <li><strong>Waymo Open Dataset</strong>: Multi-sensor driving data with LiDAR and camera annotations &ndash; <em>coming soon</em>.</li>
+    <li><strong>NuScenes</strong>: Multi-sensor urban driving data with 3D object annotations &ndash; <em>coming soon</em>.</li>
   </ul>
   <p>Adding a new dataset requires modifying only 3 files: dataset configuration, annotation parser, and evaluation questions.</p>
 </section>
@@ -851,9 +851,9 @@ Answer key:  A  A  B  A  C  B  B</code></pre>
   <h3>Evaluation Protocol</h3>
   <p>The web application supports three presentation modes for human evaluators:</p>
   <ol>
-    <li><strong>Image collages</strong> &mdash; matching the VLM input format for direct performance comparison</li>
-    <li><strong>Animated GIFs</strong> &mdash; providing temporal continuity for more intuitive scenario understanding</li>
-    <li><strong>Video playback</strong> &mdash; for annotation verification and data curation</li>
+    <li><strong>Image collages</strong> &ndash; matching the VLM input format for direct performance comparison</li>
+    <li><strong>Animated GIFs</strong> &ndash; providing temporal continuity for more intuitive scenario understanding</li>
+    <li><strong>Video playback</strong> &ndash; for annotation verification and data curation</li>
   </ol>
   <p>8 evaluators participated: 3 using collages, 5 using GIFs (108 evaluations each). GIF-based evaluations consistently outperformed collage-based (65% vs 56% peak accuracy, +16% relative improvement).</p>
 
@@ -900,7 +900,7 @@ categories.</code></pre>
   </details>
 
   <details>
-    <summary>User Prompt &mdash; CoVLA Dataset</summary>
+    <summary>User Prompt &ndash; CoVLA Dataset</summary>
     <div class="details-content">
       <p>The user prompt provides context about the image content and task requirements. For each evaluation, models receive:</p>
       <p class="code-label">User Message</p>
@@ -939,7 +939,7 @@ in the format: 1) [letter] 2) [letter] ... 7) [letter]</code></pre>
   </details>
 
   <details>
-    <summary>User Prompt &mdash; Honda Scenes Dataset</summary>
+    <summary>User Prompt &ndash; Honda Scenes Dataset</summary>
     <div class="details-content">
       <p>Honda Scenes uses 16 environmental categories instead of CoVLA's 7 behavioral categories, covering road type, weather, surface conditions, ambient lighting, and various infrastructure elements.</p>
       <p class="code-label">User Message</p>
@@ -1094,7 +1094,7 @@ in the format: 1) [letter] 2) [letter] ... 16) [letter]</code></pre>
 </div><!-- /container -->
 
 <footer>
-  VENUSS &mdash; VLM Evaluation oN Understanding Sequential Scenes
+  VENUSS &ndash; VLM Evaluation oN Understanding Sequential Scenes
 </footer>
 
 </body>
